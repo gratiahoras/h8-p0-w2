@@ -1,0 +1,47 @@
+//soal 1.
+
+STORE "m" with any value
+STORE "a" 2ms/s2
+STORE "ΣF"
+
+CALCULATE "m" times "a"
+SET "ΣF" value with calculation "m" and "a"
+
+DISPLAY "ΣF"
+
+//soal 2.
+
+STORE "Year"
+
+IF "Year" % 4 == 0 && "Year" % 100 != 0" || "Year" % 4 == 0 && "Year" % 100 == 0 && "Year" % 400 == 0 " THEN
+  DISPLAY "Tahun Kabisat"
+ELSE
+  DISPLAY "Bukan Tahun Kabisat"
+END IF
+
+//soal 3.
+
+STORE "pakaian" with 20
+
+WHILE "pakaian" <= 20
+  COMPUTE pakaian - 1
+ENDWHILE
+
+PRINT mesinCuci is on
+
+//soal 4.
+
+STORE "jumSiswaSiswi"
+STORE "siswaSiswi"
+
+SET "jumSiswaSiswi" to 0
+REPEAT
+
+  READ "siswaSiswi"
+  IF "siswaSiswi" == "kuku tidak panjang" THEN
+    DISPLAY "Murid yang rapi!"
+  ELSE
+    DISPLAY "Potong kuku!"
+  ENDIF
+
+UNTIL jumSiswaSiswi equal 40
