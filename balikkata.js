@@ -1,23 +1,14 @@
 function balikKata(kata) {
-  var panjang = kata.length;
-  var i = panjang - 1;
-  var hasil = '';
-  while (i <= panjang - 1 && i >= 0) {
-    hasil = hasil + kata[i];
-    i--;
-  }
-  return hasil
+    var row = kata.length - 1;
+    for (var i = 1; i <= 1;i++) {
+          var kosong = '';
+          for(var j = row; j >= 0; j--) {
+            kosong += kata[j];
+          }
+    }
+    return kosong;
 }
 
-function balikKata(kata) {
-  var panjang = kata.length;
-  var i;
-  var hasil = '';
-  for (i = panjang - 1; i >= 0; i--) {
-    hasil = hasil + kata [i];
-  }
-  return hasil
-}
 
 // TEST CASES
 console.log(balikKata('Hello World and Coders')); // sredoC dna dlroW olleH
