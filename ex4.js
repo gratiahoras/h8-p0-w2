@@ -48,5 +48,5 @@ switch (bulan) {
 }
 
 if (tahun > 2200 || tahun < 1900 || tahun === '') {
-    console.log('Masukkan tahun antara 1900 - 2200');
+    console.log('Masukkan tahun antara 1900 - 2020');
 }

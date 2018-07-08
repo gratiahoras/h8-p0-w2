@@ -1,5 +1,5 @@
 var nama = 'Kirito';
-var peran = 'Ksatria';
+var peran = 'Tabib';
 
 if (nama === '') {
     console.log('Nama harus diisi!');
@@ -11,10 +11,12 @@ switch (peran) {
         console.log('Halo ' + peran + ' ' + nama + ', kamu dapat menyerang dengan senjatamu!');
         break;
     case 'Tabib':
-        console.log('Selamat datang di Dunia Proxytia, ' + nama + 'Halo ' + peran + ' ' + 'name' + ', akan membantu temanmu yang terluka.');
+        console.log('Selamat datang di Dunia Proxytia, ' + nama);
+        console.log('Halo ' + peran + ' ' + nama + ', kamu akan membantu temanmu yang terluka.');
         break;
     case 'Penyihir':
-        console.log('Selamat datang di Dunia Proxytia, ' + nama + 'Halo ' + peran + ' ' + 'name' + ', kamu ciptakan keajaiban yang membantu kemenanganmu');
+        console.log('Selamat datang di Dunia Proxytia, ' + nama);
+        console.log('Halo ' + peran + ' ' + nama + ', kamu ciptakan keajaiban yang membantu kemenanganmu');
         break;
     default:
         console.log('Halo ' + nama + ', Pilih peranmu untuk memulai game!');

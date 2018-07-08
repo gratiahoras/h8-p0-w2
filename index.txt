@@ -1,47 +1,121 @@
-//soal 1.
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
 
-STORE "m" with any value
-STORE "a" 2ms/s2
-STORE "ΣF"
+ΣF = resultan gaya (Newton)
 
-CALCULATE "m" times "a"
-SET "ΣF" value with calculation "m" and "a"
+m = massa benda (kg)
 
-DISPLAY "ΣF"
+a = percepatan benda (m/s2)
 
-//soal 2.
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk
+menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan
+ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
 
-STORE "Year"
+LOGARITHM
+Menghitung resultan gaya ebuah mobil. ΣF = m x a
+1. mencari massa mobil
+2. mencari perepatan mobil
+3. mengkalikan massa dan prccepatan mobil
+4. selesai
 
-IF "Year" % 4 == 0 && "Year" % 100 != 0" || "Year" % 4 == 0 && "Year" % 100 == 0 && "Year" % 400 == 0 " THEN
-  DISPLAY "Tahun Kabisat"
-ELSE
-  DISPLAY "Bukan Tahun Kabisat"
-END IF
+PSEUDOCODE
+VARIABLE 'massa' = 600
+VARIABLE 'percepatan' = 2
+VARIABLE 'resultan gaya'
 
-//soal 3.
+STORE 'massa' with any value
+STORE 'percepatan' with any value
+CALCULATE 'massa' times 'percepatan'
+SET 'resultan gaya' value with calculation result
+DISPLAY 'resultan gaya'
 
-STORE "pakaian" with 20
+Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu
+tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun
+kabisat.
 
-WHILE "pakaian" <= 20
-  COMPUTE pakaian - 1
-ENDWHILE
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu
+antara lain:
 
-PRINT mesinCuci is on
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, dan
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan
+tahun kabisat atau bukan!
 
-//soal 4.
+LOGARITHM
+Menghitung tahun kabisat
+1. membagi tahun dengan 4 dan 100
+  1 a. Jika tahun habis di bagi 4 dan tidak habis di bagi 100 lanjut ke no. 98
+  1 b. jika syarat pada no. 1 a tidak terpenuhi lanjut ke no. 99
+2. membagi tahun dengan 4 , 100 dan 400
+ 2 a. Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+      lanjut ke no.98
+ 2 b. jika syarat pada 2 a tidak terpenuhi lanjut ke no. 99
+98. tahun merupakan tahun kabisat
+99. tahun bukan tahun kabisat
 
-STORE "jumSiswaSiswi"
-STORE "siswaSiswi"
+PSEUDOCODE
+VARIABLE 'valueYear'
 
-SET "jumSiswaSiswi" to 0
-REPEAT
+STORE 'valueYear' with any value
 
-  READ "siswaSiswi"
-  IF "siswaSiswi" == "kuku tidak panjang" THEN
-    DISPLAY "Murid yang rapi!"
-  ELSE
-    DISPLAY "Potong kuku!"
-  ENDIF
+CALCULATE  IF 'valueYear' % 4 is 0 THEN
+            IF 'valueYear' % 100 is 0 THEN
+              IF 'valueYear' % 400 is 0 THEN
+                DISPLAY 'Tahun Kabisat'
+                ELSE DISPLAY 'Bukan Tahun Kabisat'
+              ElSE DISPLAY 'Tahun Kabisat'
+            ElSE DISPLAY 'Bukan Tahun Kabisat'
 
-UNTIL jumSiswaSiswi equal 40
+
+Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci
+oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan
+dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin
+cuci menggunakan algoritma & pseudocode perulangan!
+
+LOGARITHM
+Mencuci pakaian
+1. Memasukkan pakaian ke dalam mesin cuci
+ 1 a. jika jumlah pakaian yang sudah dimasukkan sudah sebanyak 20 lanjut ke
+      no. 2
+ 1 b. jika jumlah pakaian belum sebanyak 20 teruskan langkah no. 1
+2. Hidupkan mesin cuci
+
+PSEUDOCODE
+VARIABLE 'Pakaian' = 20
+VARIABLE 'counter'
+
+STORE 'counter' with 0
+STORE 'pakaian' with any value
+WHILE 'counter' < 'pakaian' THEN
+  ADD 'counter' by 1
+DISPLAY 'Hidupkan Mesin Cuci'
+END WHILE
+
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan
+cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang
+panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan
+memuji siswa/siswi tersebut.
+
+Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+LOGARITHM
+MEMERIKSA KUKU
+1. Memerriksa kuku murid
+  1a. jika murid memiliki kuku yang panjang murid dihukum dan perikasa kuku
+      murid selanjutnya
+  1b. jika murid memiliki kuku yang pendek murid dipuji dan periksa kuku murid
+      selanjutnya
+2. jika jumlah murid yang diperiksa sudah sebanyak 40. selesaikan pemeriksaan
+
+PSEUDOCODE
+VARIABLE 'jumlahMurid' = 40
+VARIABLE 'kuku'
+
+STORE 'kuku' with 0
+WHILE 'kuku' < 'jumlahMurid'
+ADD 'kuku' by 1
+  IF 'kuku' = "Panjang"
+  DISPLAY "Kamu dihukum!"
+  ELSE DISPLAY "Kamu tidak dihukum"
+END WHILE

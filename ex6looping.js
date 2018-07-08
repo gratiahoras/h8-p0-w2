@@ -1,67 +1,58 @@
 // nomor 1.
 
-var loopOne = 0;
-var loopTwo = 22;
-
+var x = 22
+var c = 0
+var num = '- I love coding'
+var num1 = '- I will become fullstack developer'
 console.log('LOOPING PERTAMA');
-while (loopOne < 20) {
-  loopOne += 2;
-  console.log(loopOne + ' - I love coding');
+while (c<x){c+=2
+console.log(c+num);
 }
-
 console.log('LOOPING KEDUA');
-while (loopTwo > 2) {
-  loopTwo -= 2;
-  console.log(loopTwo + ' - I will become fullstack developer');
+while (x>2) {x-=2
+  console.log(x+num1);
 }
 
 // nomor 2.
-
-var loopOne = 1;
-var loopTwo = 20;
-
+var r = 0
+var t = 21
 console.log('LOOPING PERTAMA');
-for (loopOne = 1; loopOne < 21; loopOne++) {
-  console.log(loopOne + ' - I love coding');
+for (r = 1;r < t; r++) {
+  console.log(r+num);
 }
-
 console.log('LOOPING KEDUA');
-for (loopTwo = 20; loopTwo > 0; loopTwo--) {
-  console.log(loopTwo + ' - I will become fullstack developer');
+for (var t = 21; t > 0; t--) {
+  console.log(t+num1);
 }
 
 // nomor 3.
-
-var loopOne = 1;
-
-for (loopOne = 1; loopOne <= 100; loopOne++) {
-  if (loopOne % 2) {
+for (var i = 1; i < 100; i++) {
+  if (i % 2) {
     console.log('GANJIL');
-  } else {
+  }
+  else {
     console.log('GENAP');
   }
 }
 
-for (loopOne = 1; loopOne <= 100; loopOne+=2) {
-  if (loopOne % 3) {
-    console.log();
-  } else {
-    console.log('3 KELIPATAN 3');
+for (var i = 1; i <=   100; i+=2) {
+  if (i % 3){
+    console.log('');
+  }
+  else {
+    console.log('3 kelipatan 3');
   }
 }
 
-for (loopOne = 1; loopOne <= 100; loopOne+=5) {
-  if (loopOne % 6) {
-    console.log();
-  } else {
-    console.log('6 KELIPATAN 6');
+for (var i = 1; i < 100; i+=5) {
+  if (i % 6) {
+    console.log('');
+  }
+  else {
+    console.log('6 kelipatan 6');
   }
 }
 
-for (loopOne = 1; loopOne <= 100; loopOne+=9) {
-  if (loopOne % 10) {
-    console.log();
-  } else {
-    console.log('10 KELIPATAN 10');
-  }
+for (var i = 1; i < 100; i+=9) {
+  console.log('');
 }

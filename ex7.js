@@ -1,95 +1,29 @@
-// nomor 1.
-
-var rows1 = 0;
-
-while (rows1 < 5) {
-  rows1++;
-  console.log('*');
+var num1 = 5
+var bin = '*'
+for (var i = 0; i < num1; i++) {
+  console.log(bin);
 }
 
-for (rows1 = 1; rows1 <= 5; rows1++) {
-  console.log('*');
+console.log('--------------');
+
+var num3 = 5
+for (var x = 0; x < num3; x++) {
+    var tam = ''
+    for (var y = 0; y < num3; y++) {
+      tam += '*'
+    }
+    console.log(tam);
 }
 
-// nomor 2.
+console.log('----------------');
 
-var baris = 5;
-var awal = 0;
-var rows1 = '';
-var rows2 = '';
+var num2 = 5
+for (var i = 0; i < num2; i++) {
+  var tampung = ''
+  for (var j = 0; j <= i; j++) {
+    tampung += '*'
+    //console.log(buin);
 
-while (awal<baris) {
-  var rows1 = '*';
-  var awalRows = 1;
-  while (awalRows<baris) {
-    rows1 = rows1 + '*';
-    awalRows++;
   }
-  console.log(rows1);
-  awal++;
-}
-
-var rows1, rows2;
-
-for (rows1 = 1; rows1 <= 5; rows1++) {
-  rows2 = '*';
-  awalRows = 1;
-  baris = 5;
-  for (awalRows < baris; awalRows < 5; awalRows++){
-    rows2 = rows2 + '*';
-  }
-    console.log(rows2);
-}
-while (awal < baris) {
-  var rows1 = '*';
-  rows1 = rows1 + '*' + '*' + '*' + '*';
-  awal++;
-  console.log(rows1);
-}
-
-for (awal = 0; awal < baris; awal++) {
-  var rows1 = '*';
-  rows1 = rows1 + '*' + '*' + '*' + '*';
-  console.log(rows1);
-}
-
-// nomor 3.
-
-var baris = 5;
-var awal = 0;
-var botOne = '';
-var botTwo = '';
-
-//nested loop
-while (awal < baris) {
-  var botOne = '*';
-  var awalBot = 0;
-  while (awalBot < awal) {
-    botOne = botOne + '*';
-    awalBot++;
-  }
-  console.log(botOne);
-  awal++;
-}
-
-for (botOne = 1; botOne <= 5; botOne++) {
-  botTwo = '*';
-  awalBot = 1;
-  baris = 5;
-  for (awalBot = 1; awalBot < botOne; awalBot++){
-    botTwo = botTwo + '*';
-  }
-  console.log(botTwo);
-}
-
-//loop biasa
-while (awal < baris) {
-  botOne = botOne + '*';
-  awalBot++;
-  console.log(botOne);
-}
-
-for (awalBot = 0; awalBot < baris; awalBot++) {
-  botOne = botOne + '*';
-  console.log(botOne);
+  console.log(tampung);
 }
